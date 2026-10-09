@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI × 新质生产力 | AI as New Quality Productive Force</title>
+  <meta name="description" content="用数据与交互可视化探索人工智能如何成为新质生产力。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="brand-dot"></span>AI × NQPF</a>
+    <nav>
+      <a href="#engine" data-i18n="nav1">生产力引擎</a>
+      <a href="#economy" data-i18n="nav2">数据看板</a>
+      <a href="#industries" data-i18n="nav3">产业变革</a>
+      <a href="#future" data-i18n="nav4">未来与边界</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langBtn" class="pill">EN</button>
+      <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow" data-i18n="eyebrow">DATA STORY · 2026</div>
+        <h1><span data-i18n="hero1">人工智能</span><br><em data-i18n="hero2">正在重写生产力。</em></h1>
+        <p data-i18n="heroText">当数据、算法、算力与产业场景连接起来，AI 不再只是一个工具，而开始成为改变生产方式、资源配置和创新速度的新型生产力基础设施。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#engine" data-i18n="explore">开始探索 ↓</a>
+          <a class="btn ghost" href="#sources" data-i18n="sourcesBtn">查看数据来源</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="core">
+          <span>AI</span>
+          <small>PRODUCTIVITY</small>
+        </div>
+        <div class="node n1">DATA</div><div class="node n2">MODEL</div>
+        <div class="node n3">COMPUTE</div><div class="node n4">PEOPLE</div>
+      </div>
+      <div class="scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+
+    <section class="statement reveal">
+      <div class="section-label">01 / THE IDEA</div>
+      <div>
+        <h2 data-i18n="statementTitle">真正的变化，不是“AI 会做什么”，而是“人类可以把生产做到什么程度”。</h2>
+        <p data-i18n="statementText">新质生产力的核心不是单一技术，而是创新驱动、效率跃迁和产业重构。AI 通过感知、预测、生成、决策与自动化，把知识劳动中的重复环节转化为可规模化的计算能力。</p>
+      </div>
+    </section>
+
+    <section id="engine" class="section engine">
+      <div class="section-head reveal">
+        <div><div class="section-label">02 / PRODUCTIVITY ENGINE</div><h2 data-i18n="engineTitle">一条从“信息”到“价值”的生产力链</h2></div>
+        <p data-i18n="engineSub">拖动滑块，观察 AI 介入不同深度时，生产系统的能力如何变化。</p>
+      </div>
+      <div class="engine-grid">
+        <div class="engine-card reveal">
+          <div class="slider-top"><span data-i18n="aiDepth">AI 介入深度</span><strong id="depthValue">60%</strong></div>
+          <input id="depth" type="range" min="0" max="100" value="60">
+          <div class="stage-list">
+            <div class="stage"><span>01</span><b data-i18n="s1">辅助</b><small data-i18n="s1d">人做决定，AI 提供信息</small><i></i></div>
+            <div class="stage"><span>02</span><b data-i18n="s2">协作</b><small data-i18n="s2d">人机共同完成任务</small><i></i></div>
+            <div class="stage"><span>03</span><b data-i18n="s3">自动化</b><small data-i18n="s3d">AI 执行标准化流程</small><i></i></div>
+            <div class="stage"><span>04</span><b data-i18n="s4">智能系统</b><small data-i18n="s4d">AI 参与预测、优化与决策</small><i></i></div>
+          </div>
+        </div>
+        <div class="engine-output reveal">
+          <div class="metric-big"><span id="prodValue">38</span><small>%</small></div>
+          <p data-i18n="prodLabel">模拟生产率提升</p>
+          <div class="mini-bars">
+            <div><span data-i18n="m1">重复劳动</span><b id="repeatBar"></b></div>
+            <div><span data-i18n="m2">知识处理</span><b id="knowledgeBar"></b></div>
+            <div><span data-i18n="m3">创新能力</span><b id="innovationBar"></b></div>
+            <div><span data-i18n="m4">决策速度</span><b id="decisionBar"></b></div>
+          </div>
+          <p class="note" data-i18n="simNote">* 这是用于解释机制的交互模拟，不是对企业真实收益的预测。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="economy" class="section dark-section">
+      <div class="section-head reveal">
+        <div><div class="section-label">03 / THE NUMBERS</div><h2 data-i18n="dataTitle">AI 正从“技术趋势”变成“经济变量”</h2></div>
+        <p data-i18n="dataSub">把抽象的“人工智能很重要”，转换成可以观察的投资、采用率、成本和价值。</p>
+      </div>
+      <div class="kpi-grid">
+        <article class="kpi reveal"><span>GLOBAL AI INVESTMENT · 2025</span><strong data-count="581.69">0</strong><small>$B</small><p data-i18n="kpi1">全球企业 AI 投资规模</p></article>
+        <article class="kpi reveal"><span>ORGANIZATIONAL ADOPTION · 2025</span><strong data-count="88">0</strong><small>%</small><p data-i18n="kpi2">报告使用 AI 的组织比例</p></article>
+        <article class="kpi reveal"><span>GENAI ADOPTION</span><strong data-count="53">0</strong><small>%</small><p data-i18n="kpi3">生成式 AI 达到 53% 人口采用率仅用约三年</p></article>
+        <article class="kpi reveal"><span>INFERENCE COST ↓</span><strong data-count="280">0</strong><small>×</small><p data-i18n="kpi4">达到 GPT-3.5 水平的模型调用成本约下降 280 倍</p></article>
+      </div>
+      <div class="chart-grid">
+        <div class="chart-card reveal">
+          <div class="chart-title"><span data-i18n="adoptionTitle">组织 AI 使用率</span><small>2023 → 2025</small></div>
+          <div class="bar-chart" id="adoptionChart"></div>
+        </div>
+        <div class="chart-card reveal">
+          <div class="chart-title"><span data-i18n="investmentTitle">全球企业 AI 投资</span><small>USD billions</small></div>
+          <div class="line-chart" id="investmentChart"></div>
+        </div>
+      </div>
+      <div class="insight reveal"><span>↗</span><p data-i18n="insight">当 AI 的采用率、投资规模和使用成本同时发生变化，AI 就不再只是“一个软件功能”，而开始成为生产体系的基础设施。</p></div>
+    </section>
+
+    <section id="industries" class="section">
+      <div class="section-head reveal">
+        <div><div class="section-label">04 / INDUSTRY TRANSFORMATION</div><h2 data-i18n="industryTitle">同一种 AI，正在进入完全不同的生产现场</h2></div>
+        <p data-i18n="industrySub">点击行业，观察“输入 → AI → 生产力结果”的变化。</p>
+      </div>
+      <div class="industry-tabs" id="industryTabs"></div>
+      <div class="industry-panel reveal">
+        <div class="industry-icon" id="industryIcon">✦</div>
+        <div class="industry-copy"><h3 id="industryName"></h3><p id="industryDesc"></p></div>
+        <div class="flow">
+          <div><span>INPUT</span><b id="flowInput"></b></div><div class="arrow">→</div>
+          <div class="ai-box">AI</div><div class="arrow">→</div>
+          <div><span>OUTPUT</span><b id="flowOutput"></b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="split-copy reveal">
+        <div class="section-label">05 / FROM TOOL TO INFRASTRUCTURE</div>
+        <h2 data-i18n="shiftTitle">生产力跃迁的关键，是“规模化”。</h2>
+        <p data-i18n="shiftText">单个员工使用 AI，是工具升级；企业把 AI 嵌入流程，是组织升级；当 AI 与数据、算力、机器人和行业知识连接起来，才会形成新的生产系统。</p>
+        <div class="three-step">
+          <div><b>01</b><span data-i18n="step1">工具</span><small data-i18n="step1d">提高个人效率</small></div>
+          <div><b>02</b><span data-i18n="step2">流程</span><small data-i18n="step2d">重构组织协作</small></div>
+          <div><b>03</b><span data-i18n="step3">系统</span><small data-i18n="step3d">改变产业结构</small></div>
+        </div>
+      </div>
+      <div class="network reveal" aria-label="AI production network">
+        <div class="net-line l1"></div><div class="net-line l2"></div><div class="net-line l3"></div>
+        <div class="net-node center">AI</div><div class="net-node a">DATA</div><div class="net-node b">ROBOT</div>
+        <div class="net-node c">SCIENCE</div><div class="net-node d">PEOPLE</div><div class="net-node e">INDUSTRY</div>
+      </div>
+    </section>
+
+    <section id="future" class="section dark-section">
+      <div class="section-head reveal">
+        <div><div class="section-label">06 / VALUE & BOUNDARY</div><h2 data-i18n="futureTitle">新质生产力，不等于“无条件自动化”</h2></div>
+        <p data-i18n="futureSub">真正有价值的 AI，应该同时回答三个问题：创造了什么、谁获得了价值、风险是否可控。</p>
+      </div>
+      <div class="balance-grid">
+        <article class="balance-card good reveal"><div class="balance-icon">↗</div><h3 data-i18n="goodTitle">创造</h3><p data-i18n="goodText">更快的研发、更低的试错成本、更广的知识获取，以及新的产品和服务。</p><div class="meter"><i style="width:86%"></i></div></article>
+        <article class="balance-card people reveal"><div class="balance-icon">◎</div><h3 data-i18n="peopleTitle">赋能</h3><p data-i18n="peopleText">AI 可以把经验和知识“工具化”，帮助更多人完成过去需要高度专业技能的任务。</p><div class="meter"><i style="width:74%"></i></div></article>
+        <article class="balance-card risk reveal"><div class="balance-icon">!</div><h3 data-i18n="riskTitle">约束</h3><p data-i18n="riskText">幻觉、偏见、隐私、能源消耗与就业结构变化提醒我们：生产力越强，治理越重要。</p><div class="meter"><i style="width:61%"></i></div></article>
+      </div>
+      <div class="closing reveal">
+        <div class="quote-mark">“</div>
+        <h2 data-i18n="closing">AI 的意义，不只是让机器更聪明，而是让整个生产系统更有创造力。</h2>
+        <p data-i18n="closingSub">The point is not smarter machines. It is a more capable production system.</p>
+      </div>
+    </section>
+
+    <section id="sources" class="section sources">
+      <div class="section-label">07 / SOURCES</div>
+      <h2 data-i18n="sourceTitle">数据从哪里来？</h2>
+      <div class="source-list">
+        <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank">Stanford HAI — AI Index 2026 · Economy ↗</a>
+        <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report/economy" target="_blank">Stanford HAI — AI Index 2025 · Economy ↗</a>
+        <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report/research-and-development" target="_blank">Stanford HAI — AI Index 2025 · R&D ↗</a>
+        <a href="https://www.worldbank.org/en/publication/dptr2025-ai-foundations" target="_blank">World Bank — Digital Progress and Trends Report 2025 ↗</a>
+      </div>
+      <p class="source-note" data-i18n="sourceNote">页面中的“生产率提升”滑块属于机制演示；经济指标均按公开报告中的口径标注年份，避免把模拟值误解为真实预测。</p>
+    </section>
+  </main>
+
+  <footer><span>AI × NEW QUALITY PRODUCTIVE FORCE</span><span>Data story / Interactive visualization / 2026</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
